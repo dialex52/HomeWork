@@ -24,14 +24,13 @@ number_dict = {
 def num_translate_adv(number):
     if inp_number.lower() in number_dict:
         if number.istitle():
-            print(number_dict[number.lower()][1])
+            return number_dict[number.lower()][1]
         else:
-            print(number_dict[number.lower()][0])
+            return number_dict[number.lower()][0]
     else:
-        print('Вы ввели некорректное число')
         return None
 
 
 # Число для перевода запрашивается коммандой input
 inp_number = input('напишите числительное от 1 до 10 на английском в двойных кавычках :')
-num_translate_adv(inp_number)
+print(num_translate_adv(inp_number))
