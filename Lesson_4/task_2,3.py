@@ -24,6 +24,6 @@ def get_currency_rate(currency):
         print(None)
 
 
-# inp_currency = (input('Введите валюту, курс котрый вы хотите узнать: ')).upper()
-#
-# get_currency_rate(inp_currency)
+inp_currency = (input('Введите валюту, курс котрый вы хотите узнать: ')).upper()
+
+get_currency_rate(inp_currency)

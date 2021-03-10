@@ -21,4 +21,4 @@ def get_currency_rate(currency):
                 rate = round(Decimal(sep_list[i + 12].replace(',', '.')) / Decimal(sep_list[i + 4]), 2)
                 print('1 {} : {} RUB, {}'.format(currency.upper(), rate, date))
     else:
-        print(None)
+        return None
